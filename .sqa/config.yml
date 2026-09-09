@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://code-repo.d4science.org/MaDgIK/uoa-repository-manager-service.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-rust-lobster.sh
-        container: qc.acc_muggy-cinnamon-hornet
+        - /usr/bin/env sh .sqa/script.champagne_kind_caribou.sh
+        container: qc.acc_cardamom_sarcastic_spren
   QC.Doc:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-sangria-lizard.sh
-        container: qc.doc_seedy-saffron-nightingale
+        - /usr/bin/env sh .sqa/script.rose_tranquil_gnu.sh
+        container: qc.doc_puce_anxious_hawk
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-seashell-forest.sh
-        container: qc.doc_wiggy-yellow-dragon
+        - /usr/bin/env sh .sqa/script.bone_resourceful_elephant.sh
+        container: qc.doc_pumpkin_realistic_mandrill
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-ultramarine-squid.sh
-        container: qc.doc_thirsty-russet-dolphin
+        - /usr/bin/env sh .sqa/script.taupe_confident_wolf.sh
+        container: qc.doc_cayenne_respectful_jackal
   QC.Lic:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-wisteria-clam.sh
-        container: qc.lic_hilly-amaranth-dog
+        - /usr/bin/env sh .sqa/script.cerulean_delighted_clownfish.sh
+        container: qc.lic_pink_bright_opossum
   QC.Sty:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-gold-bee.sh
-        container: qc.sty_snoopy-fuchsia-cat
+        - /usr/bin/env sh .sqa/script.turquoise_impulsive_newt.sh
+        container: qc.sty_yellow_honest_toad
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-smalt-zebra.sh
-        container: qc.sty_snippy-russet-uguisu
+        - /usr/bin/env sh .sqa/script.turmeric_upbeat_pangolin.sh
+        container: qc.sty_pansy_artistic_uakari
   QC.Ver:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-service get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-cinnamon-squirt.sh
-        container: qc.ver_flimsy-harlequin-caiman
+        - /usr/bin/env sh .sqa/script.green_audacious_condor.sh
+        container: qc.ver_linen_jubilant_armadillo
 timeout: 5400
